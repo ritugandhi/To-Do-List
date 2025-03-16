@@ -1,0 +1,61 @@
+.progress-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: conic-gradient(#28a745 0deg, #ccc 0deg);
+}
+
+.mic-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mic-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .input-container {
+        width: 100%;
+    }
+    .mic-btn img {
+        width: 20px;
+        height: 20px;
+    }
+    .progress-circle {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .taskbar-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .w-25 {
+        width: 100% !important;
+    }
+    .btn-success {
+        width: 100%;
+    }
+}
